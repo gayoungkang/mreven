@@ -1,0 +1,183 @@
+/* aside start */
+aside {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+aside img {
+	width: 72px;
+}
+aside.active{
+	display: none;
+}
+/* section-1 start */ 
+.section-1 {
+	padding-top: 50px;
+	position: relative;
+    height: 90vh;
+}
+.section-1 .swiper-container-1 {
+	width: 100%;
+    height: 100%;
+}
+.section-1 .swiper-container-1 .swiper-wrapper .swiper-slide {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: 45px;
+}
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	opacity: 0.4;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+.swiper-pagination-bullet-active {
+	opacity: 0.4;
+	background-color: #fff;
+}
+.section-1 .swiper-container .swiper-wrapper .swiper-slide {
+	background-image: url("../images/main.png");
+}
+/* section-2 start */ 
+.section-2 {
+	height: 402px;
+	margin-top: 3.3%;
+	position: relative;
+	background-color: #f6f6f6;
+}
+.section-2 .content h1 {
+	padding-top: 10.9%;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Times New Roman', 'Times', 'serif';
+}
+.section-2 .content p {
+	margin-top: 3.8%;
+	text-align: center;
+	margin-bottom: 7%;
+	color: #313131;
+	font-family: 'NotoSansCJKkr-Regular','serif';
+}
+.section-2 .swiper-container-2 {
+	width: 100%;
+}
+.section-2 .swiper-container-2 .swiper-wrapper .swiper-slide {
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.section-2 .swiper-container-2 .swiper-wrapper .swiper-slide:nth-child(1n) {
+	background-image: url("../images/user_1.png");
+}
+.swiper-button-next, .swiper-button-prev {
+	background-image: url("../images/pre.png");
+}
+.swiper-button-next {
+	-webkit-transform: rotate(180deg);     
+	transform: rotate(180deg);
+}
+/* .section-3, .section-4, .section-5 start */ 
+.section-3, .section-4, .section-5 {
+	margin-top: 3.3%;
+	height: 240px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.section-3 a, .section-4 a, .section-5 a {
+	display: block;
+	text-align: center;
+}
+.section-3 a h2, .section-4 a h2, .section-5 a h2, .section-6 h2 {
+	padding-top: 10.8%;
+	font-family: 'Times New Roman', 'Times', 'serif';
+	color: #313131;
+	font-size: 30px;
+	text-align: center;
+}
+.section-3 a p, .section-4 a p, .section-5 a p, .section-6 p {
+	font-family: 'NotoSansCJKkr-Regular', 'serif';
+	color: #313131;
+	margin-top: 3.3%;
+	text-align: center;
+}
+.section-3 {
+	background-image: url("../images/category_1.png");
+}
+.section-4 {
+	background-image: url("../images/category_2.png");
+}
+.section-5 {
+	background-image: url("../images/category_3.png");
+}
+/* .section-6 start */
+.section-6 {
+	margin-top: 3.3%;
+	height: 325px;
+	background-color: #f6f6f6;
+}
+.section-6 .event-list {
+	width: 100%;
+	margin-top: 5.6%;
+}
+.section-6 .event-list li {
+	width: 48%;
+	float: left;
+	position: relative;
+	padding-top: 60%;
+}
+.section-6 .event-list li a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.section-6 .event-list li:first-child {
+	margin-right: 3.3%;
+}
+.section-6 .event-list li:first-child a {
+	background-image: url("../images/event.png");
+}
+.section-6 .event-list li:last-child a {
+	background-image: url("../images/event.png");
+}

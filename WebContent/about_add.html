@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/about_add.css" />
+<link rel="stylesheet" href="./css/header.css">
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<title>미스터어벤</title>
+</head>
+<body>
+	<header>
+		<div class="content clearfix">
+			<img class="searh-i" src="./images/searh.png" alt="검색" />
+			<a href="./main.html"><img class="logo" src="./images/logo.png" alt="검색" /></a>
+			<img class="menu-i" src="./images/menu.png" alt="검색" />
+		</div>
+		<nav>
+			<ul class="menu-list">
+				<li class="menu-title">
+					<div class="list-wrap">
+						<span>미스터어벤 메뉴</span>
+						<img class="close-i" src="./images/close.png" alt="닫기" />
+					</div>
+				</li>
+				<li><a href="./store.html"><div class="list-wrap clearfix"><span>매장안내</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="#"><div class="list-wrap clearfix"><span>예약</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>반영구</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>속눈썹</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>왁싱</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./about_add.html"><div class="list-wrap clearfix"><span>브랜드</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+			</ul>
+		</nav>
+		<div class="searh-i-wrap">
+			<ul class="searh-list">
+				<li class="top-wrap">
+					<div class="contnet">
+						<button><img class="searh-i" src="./images/searh.png" alt="검색" /></button>
+						<input type="text" placeholder="ㅣ미스터어벤 검색"/>
+						<img class="close-i" src="./images/close.png" alt="닫기" />
+					</div>
+				</li>
+				<li class="link">빠른 검색 링크</li>
+				<li><a href="./search_add.html">반영구 눈썹</a></li>
+			</ul> 
+		</div>
+	</header>
+	<section class="about-add">
+		<div class="main-title">
+			<h2>About Mr.Aven</h2>
+			<p>미스터어벤에 대한 <br>간략 소개</p>
+		</div>
+		<div class="content">
+			<div class="about-title">
+				<p>브랜드 소개</p>
+			</div>
+			<div class="brand brand-1">
+				<h3>Brand Vision</h3>
+				<div class="img"><span></span></div>
+			</div>
+			<div class="brand brand-2">
+				<h3>Brand Direction</h3>
+				<p>미스터어벤은 보편적인 뷰티 서비스를 제공하는 업체 처럼 기술제공의 목적을 가진 브랜드가 아닌, 예술철학과 진정성을 가지고 예술인, 기능인을 양성합니다. </p>
+				<div class="img"><span></span></div>
+			</div>
+			<div class="brand brand-3">
+				<h3>Brand Symbol</h3>
+				<p>미스터어벤의 가장 중요한 가치인 진정성을 서비스에 담아내어 수강생과 고객의 더 나은 라이프스타일을 만들고자 노력합니다.</p>
+				<div class="img"><span></span></div>
+			</div>
+			<div class="brand brand-4">
+				<h3>Brand Slogan</h3>
+				<p>미스터어벤의 가장 중요한 가치인 진정성을 서비스에 담아내어 수강생과 고객의 더 나은 라이프스타일을 만들고자 노력합니다. </p>
+				<div class="img"><span></span></div>
+			</div>
+		 </div>
+	</section>
+	<script>
+		var searhBtn = $(".searh-i");
+    	var searhList = $(".searh-i-wrap");
+    	var menuList = $(".menu-list>li");
+    	var close = $(".close-i");
+    	var menu = $(".menu-i");
+    	var nav = $("nav");
+    	var searhCloseBtn =$("header .searh-i-wrap .searh-list .contnet>.close-i")
+   		
+    	menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	nav.removeClass("active");
+            	
+            } else {
+            	menu.addClass("active");
+            	nav.addClass("active");
+            }
+        });
+    	
+    	close.on("click", function () {
+            close.hasClass("active");
+            close.removeClass("active");
+            nav.removeClass("active");
+            menu.removeClass("active");
+        });
+    	
+    	searhBtn.on("click", function () {
+            if (searhBtn.hasClass("active")) {
+            	searhBtn.removeClass("active");
+            	searhList.removeClass("active");
+
+            } else {
+            	searhBtn.addClass("active");
+            	searhList.addClass("active");
+            }
+        });
+    	
+    	searhCloseBtn.on("click", function () {
+    		searhCloseBtn.hasClass("active");
+    		searhCloseBtn.removeClass("active");
+    		searhBtn.removeClass("active");
+        	searhList.removeClass("active");
+        });
+	</script>
+</body>
+</html>

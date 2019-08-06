@@ -1,0 +1,139 @@
+.searh-i-wrap {
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+}
+.searh-i-wrap .contnet {
+	width: 88%;
+	margin: 0 auto;
+	padding: 4.8% 0;
+	position: relative;
+}
+.searh-i-wrap .contnet button {
+	float: left;
+	background-color: transparent;
+}
+.searh-i-wrap .contnet button .searh-i {
+	width: 20px;
+}
+.searh-i-wrap .contnet input {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 240px;
+	height: 19px;
+	color: #ffffff;
+	border: 0;
+	font-family: 'NotoSansCJKkr-Regular','serif';
+	background-color: transparent;
+}
+.searh-i-wrap .contnet input::placeholder {
+	color: #ffffff;
+}
+.searh-i-wrap .contnet .close-i {
+	width: 20px;
+	float: right;
+}
+.search_add .main-title {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/back.png");
+}
+.search_add .main-title h2 {
+	padding-top: 9.6%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', 'Times', 'serif';
+}
+.search_add .main-title p {
+	opacity: 0.6;
+	color: #ffffff;
+	padding-bottom: 9.6%;
+	font-family: 'NotoSansCJKkr-Light', 'serif';
+	margin-top: 3.4%;
+	text-align: center;
+	line-height: 1.38;
+}
+.search_add .user-list {
+	width: 100%;
+}
+.search_add .content .user-list>li {
+	width: 100%;
+	margin-top: 7.3%;
+	background-color: #f6f6f5;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.search_add .content .user-list>li:last-child {
+	margin-bottom: 7.3%;
+}
+.search_add .content .user-list>li .img {
+	width: 57%;
+	float: left;
+	position: relative;
+	padding-top: 57%;
+}
+.search_add .content .user-list>li .img span{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/user_1.png");
+}
+.search_add .content .user-list>li .text-box {
+	width: 43%;
+	float: right;
+}
+.search_add .content .user-list>li .text-box h3 {
+	width: 100%;
+	line-height: 40px;
+	height: 40px;
+	padding-left: 8%;
+	font-size: 0.9rem;
+	font-family: 'NotoSansCJKkr-Bold', 'serif';
+	background-color: #fff;
+	position: relative;
+}
+.search_add .content .user-list>li .text-box h3::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	width: 10px;
+	border-bottom: 2px solid #f8b551;
+}
+.search_add .content .user-list>li .text-box .tag-list {
+	width: 100%;
+	padding: 8% 8% 25% 8%;
+}
+.search_add .content .user-list>li .text-box .tag-list li {
+	font-size: 0.6rem;
+	line-height: 1.5;
+	color: #b7b7b7;
+	font-family: 'NotoSansCJKkr-Light', 'serif';
+}
+.search_add .content .user-list>li .text-box .tag-list li:first-child{
+	color: #f8b551;
+	font-family: 'NotoSansCJKkr-Bold', 'serif';
+}
+.search_add .content .user-list>li .text-box .more-btn {
+	padding: 0 0 8% 8%;
+	color: #5d5c5c;
+	font-size: 0.6rem;
+	font-family: 'NotoSansCJKkr-Regular', 'serif';
+}
+.search_add .content .user-list>li .text-box .more-btn img {
+	width: 4px;
+	margin-left: 4%;
+	vertical-align: middle;
+}
+@media only screen and (max-width:320px) {
+	.search_add .content .user-list>li .text-box .tag-list {padding: 8% 8% 9% 8%;}
+}

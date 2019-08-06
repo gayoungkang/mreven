@@ -1,0 +1,105 @@
+.about-add {
+	padding-top: 50px;
+}
+.about-add .main-title {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/back.png);
+}
+.about-add .main-title h2 {
+	padding-top: 9.6%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', 'Times', 'serif';
+}
+.about-add .main-title p {
+	opacity: 0.6;
+    color: #ffffff;
+    padding-bottom: 9.6%;
+    font-family: 'NotoSansCJKkr-Light', 'serif';
+    margin-top: 3.4%;
+    text-align: center;
+    line-height: 1.38;
+}
+.about-add .content {
+	padding-bottom: 9.5%;
+}
+.about-add .content .about-title {
+	width: 100%;
+}
+.about-add .content .about-title p {
+	width: 36.8%;
+	height: 32px;
+	margin: 0 auto;
+	margin-top: 0.9rem; 
+	margin-bottom: 1.9rem;
+	line-height: 32px;
+	border-radius: 25px;
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	font-family: 'NotoSansCJKkr-Regular', 'serif';
+	background-color: #000;
+}
+.about-add .content .brand {
+	text-align: center;
+	margin-bottom: 18%;
+}
+.about-add .content .brand h3 {
+	margin-bottom: 3.8%;
+	text-align: center;
+	font-size: 1.9rem;
+    font-family: 'Times New Roman', 'Times', 'serif';
+}
+.about-add .content .brand p {
+	margin-bottom: 7.4%;
+	text-align: left;
+	line-height: 1.46;
+	font-family: 'NotoSansCJKkr-Regular', 'serif';
+}
+.about-add .content .brand .img {
+	width: 100%;
+	position: relative;
+}
+.about-add .content .brand .img span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0; 
+	bottom: 0; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.about-add .content .brand-1 .img {
+	padding-top: 52.2%;
+}
+.about-add .content .brand-1 .img span {
+	background-image: url("../images/brand_1.png");
+}
+.about-add .content .brand-1 h3 {
+	margin-bottom: 7.4%;
+}
+.about-add .content .brand-2 .img {
+	padding-top: 85.2%;
+}
+.about-add .content .brand-2 .img span {
+	background-image: url("../images/brand_2.png");
+}
+.about-add .content .brand-3 .img {
+	padding-top: 28.3%;
+}
+.about-add .content .brand-3 .img span {
+	background-image: url("../images/brand_3.png");
+}
+.about-add .content .brand-4 {
+	margin-bottom: 0;
+}
+.about-add .content .brand-4 .img {
+	padding-top: 78.9%;
+}
+.about-add .content .brand-4 .img span {
+	background-image: url("../images/brand_4.png");
+}

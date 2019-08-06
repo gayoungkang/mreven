@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/service_add.css" />
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<title>미스터어벤</title>
+</head>
+<body>
+	<header>
+		<div class="content clearfix">
+			<img class="searh-i" src="./images/searh.png" alt="검색" />
+			<a href="./main.html"><img class="logo" src="./images/logo.png" alt="검색" /></a>
+			<img class="menu-i" src="./images/menu.png" alt="검색" />
+		</div>
+		<nav>
+			<ul class="menu-list">
+				<li class="menu-title">
+					<div class="list-wrap">
+						<span>미스터어벤 메뉴</span>
+						<img class="close-i" src="./images/close.png" alt="닫기" />
+					</div>
+				</li>
+				<li><a href="./store.html"><div class="list-wrap clearfix"><span>매장안내</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="#"><div class="list-wrap clearfix"><span>예약</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>반영구</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>속눈썹</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./service_add.html"><div class="list-wrap clearfix"><span>왁싱</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+				<li><a href="./about_add.html"><div class="list-wrap clearfix"><span>브랜드</span><img src="./images/nav_i.png" alt="검색" /></div></a></li>
+			</ul>
+		</nav>
+		<div class="searh-i-wrap">
+			<ul class="searh-list">
+				<li class="top-wrap">
+					<div class="contnet">
+						<button><img class="searh-i" src="./images/searh.png" alt="검색" /></button>
+						<input type="text" placeholder="ㅣ미스터어벤 검색"/>
+						<img class="close-i" src="./images/close.png" alt="닫기" />
+					</div>
+				</li>
+				<li class="link">빠른 검색 링크</li>
+				<li><a href="./search_add.html">반영구 눈썹</a></li>
+			</ul> 
+		</div>
+	</header>
+	<section class="service_add">
+		<div class="main-title">
+			<h2>Waxing</h2>
+			<p>미스터어벤만의<br>결이 살아있는 반영구 서비스</p>
+		</div>
+		<div class="list-content list-fixed">
+			<div class="content">
+				<div class="list-wrap">
+					<ul class="service-list clearfix">
+						<li class="active"><a href="#">페이스 왁싱</a></li>
+						<li><a href="#">바디 왁싱</a></li>
+						<li><a href="#">브라질리언 왁싱</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="list-content list-original">
+			<div class="content">
+				<div class="list-wrap">
+					<ul class="service-list clearfix">
+						<li class="active"><a href="#">페이스 왁싱</a></li>
+						<li><a href="#">바디 왁싱</a></li>
+						<li><a href="#">브라질리언 왁싱</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-slide">
+			<h3>Eyebrow Case</h3>
+			<p>#미스터어벤 #연예인눈썹 #자연눈썹 #반영구눈썹</p>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide">
+				    	<a href="#"></a>
+				    </div>
+				    <div class="swiper-slide">
+				    	<a href="#"></a>
+				    </div>
+				    <div class="swiper-slide">
+				    	<a href="#"></a>
+				    </div>
+				</div>
+				<div class="swiper-button-next"></div>
+    			<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+		<div class="event-pg">
+			<div class="content">
+				<h4>Mr.Aven Event</h4>
+				<p>#미스터어벤 #연예인눈썹 #왁싱 #속눈썹 #붙임머리</p>
+				<ul class="clearfix">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<script>
+var searhBtn = $(".searh-i");
+    	var searhList = $(".searh-i-wrap");
+    	var menuList = $(".menu-list>li");
+    	var close = $(".close-i");
+    	var menu = $(".menu-i");
+    	var nav = $("nav");
+    	var searhCloseBtn =$("header .searh-i-wrap .searh-list .contnet>.close-i")
+   		
+    	menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	nav.removeClass("active");
+            	
+            } else {
+            	menu.addClass("active");
+            	nav.addClass("active");
+            }
+        });
+    	
+    	close.on("click", function () {
+            close.hasClass("active");
+            close.removeClass("active");
+            nav.removeClass("active");
+            menu.removeClass("active");
+        });
+    	
+    	searhBtn.on("click", function () {
+            if (searhBtn.hasClass("active")) {
+            	searhBtn.removeClass("active");
+            	searhList.removeClass("active");
+
+            } else {
+            	searhBtn.addClass("active");
+            	searhList.addClass("active");
+            }
+        });
+    	
+    	searhCloseBtn.on("click", function () {
+    		searhCloseBtn.hasClass("active");
+    		searhCloseBtn.removeClass("active");
+    		searhBtn.removeClass("active");
+        	searhList.removeClass("active");
+        });
+
+	var listFixed = $(".list-fixed");
+	var listOriginal = $(".list-original");
+	var mainSlide = $(".main-slide");
+	
+	$(window).scroll(function(){
+		if($(this).scrollTop() < 149){
+			listFixed.hasClass("active");
+			listFixed.removeClass("active");
+			listOriginal.removeClass("active");
+			mainSlide.removeClass("active");
+		}else {
+			listFixed.addClass("active");
+			listOriginal.addClass("active");
+			mainSlide.addClass("active");
+		}
+	});
+	
+	/* slide */
+	var swiper = new Swiper('.swiper-container', {
+		  slidesPerView: 1.3,
+	      spaceBetween: 10,
+	      centeredSlides: true,
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	
+	/* 버튼 active */
+	var btn = $(".service-list li");
+
+	btn.on("click", function () {
+      btn.hasClass("active") 
+      btn.removeClass("active");
+      $(this).addClass("active"); 
+    });
+  </script>
+</body>
+</html>
